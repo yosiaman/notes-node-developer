@@ -1,3 +1,8 @@
 node --help
 node [options] [script.js] [arguments]
 node --v8-options
+node --check [script.js]    ||    node -c [script.js]
+
+----- EVALUASI sintaks JS di shell
+node --eval "console.log(1+1)"    ||    node -e "console.log(1+1)"
+node --print "1+1"    || node -p "1+1"
