@@ -1,0 +1,3 @@
+node --help
+node [options] [script.js] [arguments]
+node --v8-options
