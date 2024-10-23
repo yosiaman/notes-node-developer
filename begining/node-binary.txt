@@ -1,8 +1,17 @@
 node --help
 node [options] [script.js] [arguments]
 node --v8-options
+
+----- validasi berkas JS
 node --check [script.js]    ||    node -c [script.js]
 
 ----- EVALUASI sintaks JS di shell
 node --eval "console.log(1+1)"    ||    node -e "console.log(1+1)"
 node --print "1+1"    || node -p "1+1"
+
+----- PRELOADING commonJS module
+node --require ./preload.js main.js   ||    node -r ./preload.js main.js
+node -r ./env-setup.js app.js
+
+----- MEMPERPANJANG stack trace
+node --stack-trace-limit=101 error.app.js
