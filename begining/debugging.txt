@@ -1,0 +1,16 @@
+----- MODE DEBUG lewat Chrome DevTools
+node --inspect calculator.app.js  (cocok untuk aplikasi continuous running, event-driven)
+node --inspect-brk calculator.app.js  (break mode, cocok untuk aplikasi sekali jalan)
+buka di chrome "chrome://inspect"
+lihat di "Remote Target"
+    tambahkan breakpoint dengan klik nomor baris
+    klik "Resume script execution" untuk menuju breakpoint kita dan berhenti di sana
+    di kode juga bisa tambahkan "debugger;"
+
+----- MODE DEBUG lewat Node.js Inspector (lewat shell/command prompthelp)
+node inspect calculator.app.js
+debug> help (liat command nya ada apa aja)
+debug> .exit (keluar dari Node.js Inspector)
+
+----- NGERJAIN QUIZ DEBUG
+node --inspect-brk quiz.app.js
